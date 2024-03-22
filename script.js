@@ -7,8 +7,8 @@ let par = 3 * holes;
 for(let i = 1; i <= holes; i++){
     putts = prompt(`How many putts for hole ${i}`);
     par -= putts;
-    console.log(putts);
-    console.log(par);
+    console.log("putts "+ putts);
+    console.log("Par " + par);
 }
 if(par >= 0){
     alert(`Good job! Your par was ${par}!`);
