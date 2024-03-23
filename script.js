@@ -10,13 +10,18 @@ for(let i = 1; i <= holes; i++){
     console.log("putts "+ putts);
     console.log("Par " + par);
 }
-if(par >= 0){
-    alert(`Good job! Your par was ${par}!`);
-    console.log(`Good job! Your par was ${par}!`);
+if(par > 0){
+    alert(`Great job, ${name}! Your total par was: +${par}!`);
+    console.log(`Great Job ${name}! Your total par was +${par}!`);
+
+}
+else if(par == 0){
+    alert(`Good game, ${name}! Your total par was: ${par}!`);
+    console.log(`Good game job ${name}! Your  total par was ${par}!`);
 
 }
 else{
-    alert("Sorry, you lose. Your par was "+par);
-    console.log("Sorry, you lose. Your par was "+par);
+    alert(`Nice try, ${name}... Your total par was `+par);
+    console.log(`Nice try, ${name}... Your total par was `+par);
 
 }
