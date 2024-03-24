@@ -10,9 +10,10 @@ for(let i = 1; i <= holes; i++){
     console.log("putts "+ putts);
     console.log("Par " + par);
 }
+
 if(par > 0){
-    alert(`Great job, ${name}! Your total par was: +${par}!`);
-    console.log(`Great Job ${name}! Your total par was +${par}!`);
+    alert(`Great job, ${name}! Your total par was: -${par}!`);
+    console.log(`Great Job ${name}! Your total par was -${par}!`);
 
 }
 else if(par == 0){
@@ -21,7 +22,7 @@ else if(par == 0){
 
 }
 else{
-    alert(`Nice try, ${name}... Your total par was `+par);
-    console.log(`Nice try, ${name}... Your total par was `+par);
+    alert(`Nice try, ${name}... Your total par was +`+Math.abs(par));
+    console.log(`Nice try, ${name}... Your total par was +`+Math.abs(par));
 
 }
